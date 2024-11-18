@@ -1,40 +1,122 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Potifólio </title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css"
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Meu portfólio</title>
 </head>
+
 <body>
-    
-      <section class="apresentação">
+    <header class="container text-center">
+        <img src="ryan.jpeg" alt="avatar da ryan" class="rounded-circle" width="150" height="150"
+            srcset="">
+        <p class="lead">Eu sou Ryan Tanaka</p>
+        <h1>Sou jogador de Volei</h1>
+        <p> Sou estudante do 2ºano do ensino médio integral e escolhi a componente curricular exatas e em minhas horas livres gosto de praticar esportes entre ele taekwondo e volei </p>
+        <p>Minhas habilidades</p>
+        <div>
+            <p class="badge bg-secondary">Taekwondo</p>
+            <p class="badge bg-secondary">Volei</p>
+            <p class="badge bg-secondary">Queimada</p>
+            <p class="badge bg-secondary">Gincanas</p>
+        </div>
+    </header>
+    <main class="container mt-5">
+        <h2>Minhas vitórias</h2>
+        <div class="row">
+            <!-- Projeto 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="vitoriavolei.jpeg" class="card-img-top" alt="Imagem do dia do volei">
+                    <div class="card-body">
+                        <h5 class="card-title">Vitória contra Primeiro de maio</h5>
+                        <p class="card-text">Esse foi o primeiro jogo de volei pelo Colégio Estadual 14 de dezembro e ganhamos de primeiro de maio de 3x2
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- Projeto 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="vitoriagincana.jpeg" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
+                    <div class="card-body">
+                        <h5 class="card-title">Vitória da Gincana 31</h5>
+                        <p class="card-text">Esta foi uma das melhores vitorias e sensações pois no nosso segundo ano no Colegio ja conseguimos ganahar nossa primeira gincana </p>
+                    </div>
+                </div>
+            </div>
 
-<img src="imagem perfil.jpeg" alt="foto-do-alfredo">
-<p class="apresentação-nome"> Olá eu sou Ryan Tanaka </p>
-<h1 class="apresentação-título"> Eu estudo programação</h1>
-<p class=""> Estudo no Colégio Estadual 14 de Dezembro e estou cursando segundo do ensino médio intregral, e escolhi o componente curricular exatas onde possui o curso de etinerario de matemática e suas tecnologias. </p>
+            <!-- Projeto 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/projeto-3.png" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
+                    <div class="card-body">
+                        <h5 class="card-title">Explorando o Universo: Uma Aventura Interativa em Astronomia com Scratch
+                        </h5>
+                        <p class="card-text">EEste projeto Scratch cria uma experiência interativa educativa sobre
+                            astronomia, permitindo aos usuários explorar informações sobre constelações, eclipses, e a
+                            forma da Terra através de cenários dinâmicos e diálogos informativos.
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-      </section>
-      <section>
-        <h1> Minhas Habilidades </h1>
-        <p>HTML</p>
-        <p>CSS</p>
-        <p>JAVA SCRIPT</p>
-        <p>SCRATCH</p>
-        
-      </section>
+    <!-- Modal 1 -->
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Minha Biblioteca: Uma Webpage Personalizada</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>O projeto é uma página web criada com HTML e CSS, destinada a exibir uma coleção pessoal de
+                        livros favoritos. O objetivo é criar um ambiente virtual onde seja possível compartilhar
+                        seus livros preferidos, fornecendo uma descrição breve de cada um, incluindo o autor, o ano
+                        de publicação e uma opção de compra.</p>
+                    <p>A estrutura do site é baseada em HTML, que define a semântica e o layout do conteúdo,
+                        enquanto o CSS é usado para estilizar a página visualmente, incluindo cores, tipografia e a
+                        disposição dos elementos.</p>
+                    <p>O HTML organiza o conteúdo em um cabeçalho com o título do site, seguido por uma divisão
+                        principal (.container) que apresenta o propósito do site e a coleção de livros em uma seção
+                        flexível (.livros). Cada livro é destacado em seu próprio contêiner (.livro), mostrando uma
+                        imagem da capa, detalhes do livro e um link de compra. O design responsivo é garantido pelo
+                        uso de uma meta tag viewport e um layout flexível que se adapta a diferentes tamanhos de
+                        tela.</p>
+                    <p>O CSS personaliza o visual do site, usando variáveis para cores, estilizando o texto com uma
+                        fonte importada do Google Fonts e aplicando um esquema de cores suaves e botões interativos.
+                        O uso de HTML e CSS é importante pois assim é possível criar um site acessível e
+                        esteticamente agradável sem a necessidade de scripts complexos, com foco na usabilidade e na
+                        experiência da pessoa usuária. A escolha da tipografia e do esquema de cores contribui para
+                        a atmosfera acolhedora do site, incentivando a exploração da coleção de livros.</p>
+                    <img src="img/projeto-1.png" alt="Imagem representativa do projeto de uma biblioteca online">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://femascheti.github.io/minhas-leituras/">Ver projeto ao vivo</a>
+                    <a href="https://github.com/femascheti/minhas-leituras">Ver código do projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-      <Section>
-           
-            <h1> Meus Projetos </h1>
-            <h2> Site Escola </h2>
-            <h2> Agrinho </h2>
-            <h2> Pong </h2>
+    <footer class="container py-5">
+        <h2>Entre em contato</h2>
+        <div>
+            <a href="https://github.com/femascheti">GitHub</a>
+        </div>
+        <p class="my-5 text-center">© Copyright 2024. Produzido por Fernanda Mascheti</p>
+    </footer>
 
-      </Section>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
